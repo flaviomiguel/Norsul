@@ -10,7 +10,6 @@ CREATE OR REPLACE PACKAGE IPS_INTEGRATION AS
  PROCEDURE proc_upd_mrstatus;
 
 END IPS_INTEGRATION;
- 
 /
 
 
@@ -29,7 +28,9 @@ AS
     v_errorlog_id NUMBER;
     v_updatemr boolean;
   BEGIN
-    /*Atualizando PO Header */
+    
+    /*Atualizando PO Header*/
+    
     FOR j IN
     (SELECT  POA.*,
       PROT.LOAD_SEQ,
